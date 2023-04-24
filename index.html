@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="wrapper-left">
+                <div class="wrapper-text">
+                    <h1 class="margin-bottom-16px">Подберём вуз мечты</h1>
+                    <p class="paragraph-main-page">Ответьте на 8 простых вопросов, и мы составим список наболее подходящих для вас вузов</p>
+                </div>
+                <div class="wrapper-img">
+                    <img src="icons/Main-page.svg" alt="лого" class="">
+                    <div class="wrapper-img__text wrapper-img__text_v1">Бесплатно</div>
+                    <div class="wrapper-img__text wrapper-img__text_v2">за 30 секунд</div>
+                </div>     
+            </div>
+            <div class="wrapper-block">
+                <div class="wrapper-block__question">
+                    <p class="question">Для кого вы ищете учебное заведение?</p>
+                    <p class="step">Шаг 1/9</p>
+                </div>           
+                <div class="wrapper-block__content">
+                    <div class="wrapper-block__step-1">
+                        <div class="card">
+                            <input type="radio" name="step-1" value="me" id="me" class="display-none">
+                            <label for="me">Себе</label>
+                            <span class="radio-button radio-button__active"></span>
+                        </div>
+                        <div class="card">
+                            <input type="radio" name="step-1" value="spouse" id="spouse" class="display-none">
+                            <label for="spouse">Супругу/супруге</label>
+                            <span class="radio-button"></span>
+                        </div>
+                        <div class="card">
+                            <input type="radio" name="step-1" value="relative" id="relative" class="display-none">
+                            <label for="relative">Родственнику</label>
+                            <span class="radio-button"></span>
+                        </div>
+                        <div class="card">
+                            <input type="radio" name="step-1" value="colleague" id="colleague" class="display-none">
+                            <label for="colleague">Коллеге</label>
+                            <span class="radio-button"></span>
+                        </div>
+                        <div class="card">
+                            <input type="radio" name="step-1" value="child" id="child" class="display-none">
+                            <label for="child">Ребенку</label>
+                            <span class="radio-button"></span>
+                        </div>
+                        <div class="card">
+                            <input type="radio" name="step-1" value="other" id="other" class="display-none">
+                            <label for="other">Другое</label>
+                            <span class="radio-button"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-block__button">
+                    <button class="button back">Назад</button>
+                    <button class="button more">Далее</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
