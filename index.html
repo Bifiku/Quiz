@@ -28,7 +28,7 @@
                 </div>           
                 <div class="wrapper-block__content">
                     <div class="wrapper-block__step-1">
-                        <div class="card">
+                        <div class="card card__active">
                             <input type="radio" name="step-1" value="me" id="me" class="display-none">
                             <label for="me">Себе</label>
                             <span class="radio-button radio-button__active"></span>
@@ -61,8 +61,14 @@
                     </div>
                 </div>
                 <div class="wrapper-block__button">
-                    <button class="button back">Назад</button>
-                    <button class="button more">Далее</button>
+                    <button class="button back opacity">
+                        <span class="arrow margin-right-8px"></span>
+                        <span>Назад</span>
+                    </button>
+                    <button class="button more">
+                        <span class="margin-right-8px">Далее</span>
+                        <span class="arrow__more"></span>
+                    </button>
                 </div>
             </div>
         </section>
