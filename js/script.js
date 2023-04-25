@@ -53,11 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     stepCount--;
                 } 
-            } else {
-                
-            }
-            console.log(stepCount < questions.length);
-            
+            }           
 
             // Показываем текущий блок шага
             for(let key of wrapperBlock.children){
