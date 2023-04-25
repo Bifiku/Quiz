@@ -293,4 +293,5 @@ button {
 
 .opacity {
     opacity: 0;
+    visibility: hidden;
 }
