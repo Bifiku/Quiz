@@ -166,6 +166,22 @@ button {
     margin-bottom: 0.8rem;
 }
 
+.wrapper-block__step-5 {
+    flex-direction: column;
+}
+
+.wrapper-block__step-5 .card:not(:last-child) {
+    margin-bottom: 0.8rem;
+}
+
+.wrapper-block__step-6 {
+    flex-direction: column;
+}
+
+.wrapper-block__step-6 .card:not(:last-child) {
+    margin-bottom: 0.8rem;
+}
+
 .wrapper-block__button {
     height: 100%;
     display: flex;
