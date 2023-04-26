@@ -16,26 +16,73 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
 
-    // Пробегаем по всем карточкам
+    // Логика работы карточек с radio-кнопкой
     const cards = document.querySelectorAll('.card');
 
     cards.forEach(item => {
-        item.addEventListener('click', () => {
-            const input = item.querySelector('input');
-            const span = item.querySelector('span');
-
-            cards.forEach(btn => {
-                btn.classList.remove('card__active');
-                btn.querySelector('span').classList.remove('radio-button__active');
+        if(item && item.querySelectorAll('.radio-button').length > 0){
+            item.addEventListener('click', () => {
+                const input = item.querySelector('input');
+                const span = item.querySelector('span');
+    
+                cards.forEach(btn => {
+                    btn.classList.remove('card__active');
+                    btn.querySelector('span').classList.remove('radio-button__active');
+                });
+    
+                span.classList.add('radio-button__active');
+                item.classList.add('card__active');
+    
+                input.checked = true;
             });
-
-            span.classList.add('radio-button__active');
-            item.classList.add('card__active');
-
-            input.checked = true;
-        });
+        }      
     });
 
+    const dropMenu = document.querySelectorAll('.drop-menu');
+    
+
+    // Логика выбора одного чекбокса
+    const cityItems = document.querySelectorAll('.drop-menu__item');
+
+    cityItems.forEach(item => {
+        if(item && item.querySelectorAll('.checked-button').length > 0){
+            item.addEventListener('click', () => {
+                const input = item.querySelector('input');
+                const span = item.querySelector('span');
+                const text = item.querySelector('label');
+                const cardText = document.querySelectorAll('.card-checkbox__text')
+
+                let mainText = text.innerHTML;
+    
+                cityItems.forEach(btn => {
+                    btn.querySelector('span').classList.remove('checked-button__active');
+                    
+                });
+                span.classList.add('checked-button__active');
+                
+                input.checked = true;
+                
+                cardText.forEach(elem => {
+                    elem.innerHTML = mainText;
+                });
+            });
+        }      
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Логика работы кнопки 
     const button = document.querySelectorAll('button');
     let stepCount = 1;
     
@@ -58,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Показываем текущий блок шага
             for(let key of wrapperBlock.children){
                 const wrapperContent = key;
-                if((key.classList[0] == `wrapper-block__step-${stepCount}`)){
+                if((key.classList[1] == `wrapper-block__step-${stepCount}`)){
                     wrapperContent.classList.remove('display-none');
                 } else {
                     wrapperContent.classList.add('display-none');
