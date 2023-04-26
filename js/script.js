@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         }
         // console.log(submitBtn.disabled);
-        submitBtn.disabled = checked;
+        submitBtn.disabled = false;
         
         console.log(submitBtn.disabled);
     }
