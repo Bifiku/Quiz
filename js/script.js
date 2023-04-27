@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const input = item.querySelector('input');
                 const span = item.querySelector('span');
                 const text = item.querySelector('label');
-                const cardText = document.querySelectorAll('.card-checkbox__text')
+                const cardText = document.querySelectorAll('.card-checkbox__text');
 
                 let mainText = text.innerHTML;
     
