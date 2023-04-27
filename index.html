@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Подключаем AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      // Инициализируем AOS
+      AOS.init();
+    </script>
     <main>
         <section class="container">
             <div class="wrapper-left">
@@ -273,7 +280,24 @@
                             <span class="radio-button"></span>
                         </div>
                     </div>
+                    <!-- Блок 9 -->
+                    <div class="wrapper-block__step wrapper-block__step-9 display-none">
+                        <div class="wrapper-block__test">
+                            <form id="my-form">
+                                <div class="card">
+                                    <input type="text" name="name" placeholder="Как вас зовут?" required>
+                                </div>
+                                <div class="card">
+                                    <input type="text" name="phone" placeholder="Номер телефона" required>
+                                </div>
+                                <div class="card">
+                                    <input name="email" placeholder="E-mail" required>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
+                
                 <div class="wrapper-block__button">
                     <button class="button back opacity">
                         <span class="arrow margin-right-8px"></span>
@@ -283,6 +307,10 @@
                         <span class="margin-right-8px">Далее</span>
                         <span class="arrow__more"></span>
                     </button>
+                    <div class="wrapper-block__send display-none">
+                        <button id="test" class="button send" type="submit">Отправить предложение</button>
+                        <p class="send__donwText">Нажимая на кнопку, вы даете согласие на обработку своих <a>Персональных данных</a></p>
+                    </div>
                 </div>
             </div>
         </section>
